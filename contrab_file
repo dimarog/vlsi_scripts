@@ -1,0 +1,4 @@
+SHELL=/bin/csh
+#0 12 */3 * * /prj/qct/chips/magnus/sandiego/tapeout/r0_sec14lpp7lm/doc/scripts_common/check_latest_cm.py
+0 12 */3 * * /prj/qct/chips/magnus/sandiego/tapeout/r0_sec14lpp7lm/doc/scripts_common/check_latest_cm.csh >& /prj/qct/chips/magnus/sandiego/tapeout/r0_sec14lpp7lm/doc/scripts_common/cron.log
+
