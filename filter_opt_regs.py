@@ -40,7 +40,7 @@ logger = utils.start_log("filter_opt_regs",".",True)
 
 def ParseArgs():
     global args
-    usage = "\nfilter_opt_regs.py -i $synth/uflow/opt_regs/phy_fe_tx.initopt.opt_regs.rpt -w my_waiver.wl (optional -o <out_file_name>)\n"
+    usage = "\nfilter_opt_regs.py -i $synth/opt_regs/phy_fe_tx.initopt.opt_regs.rpt -w my_waiver.wl (optional -o <out_file_name>)\n"
     parser = argparse.ArgumentParser(description='filter_opt_regs.py', usage=usage, epilog='\n',formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('-i' , nargs = '+'  , dest  = 'IN_FILES' , action = 'store' , default = []  , help = 'List of input files to filter. (note the syntax, single -i flag for all files)')
     parser.add_argument('-w'                , dest  = 'WAIVER'   , action = 'store' , default = ""  , help = 'waiver file name to use')
